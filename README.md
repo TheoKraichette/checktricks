@@ -15,7 +15,7 @@ CheckTricks est une application permettant aux utilisateurs d'apprendre, de suiv
 
 ### 1️⃣ Cloner le projet
 ```bash
-git clone https://github.com/tonrepo/checktricks.git
+git clone https://github.com/TheoKraichette/checktricks.git
 cd checktricks
 ```
 
@@ -25,6 +25,13 @@ checktricks/
 ├── client/               # Frontend React
 │   ├── public/
 │   ├── src/
+│       ├──assets/
+│       ├──components/
+│       ├──context/
+│       ├──pages/
+│       ├──services/
+│   ├──App.jsx
+│   ├──main.jsx
 │   ├── package.json
 │   └── .env
 ├── server/               # Backend Node.js/Express
@@ -59,13 +66,6 @@ Créer un fichier `.env` et ajouter les informations suivantes :
 ```env
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
-PORT=5000
-```
-
-#### Frontend (client/.env)
-Créer un fichier `.env` et ajouter :
-```env
-REACT_APP_API_URL=http://localhost:5000/api
 ```
 
 ### 5️⃣ Démarrer l'application
@@ -83,7 +83,7 @@ npm run dev
 #### Frontend
 ```bash
 cd ../client
-npm start
+npm run dev
 ```
 
 ---
